@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+      #restart: always
+    container_name: postgresql
+    volumes:
+      - postgres_data_volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    networks:
+      - stakevision
+volumes:
+  postgres_data_volume:
+    driver: local
+    driver_opts:
+      device: ./postgresql_data
+      o: bind
+      type: none
+networks:
+  stakevision:
+    driver: bridge
+
