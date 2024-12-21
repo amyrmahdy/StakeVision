@@ -15,7 +15,7 @@ def process_data(retrieved_rows):
     df['hour'] = df['date'].dt.hour
     df['minute'] = df['date'].dt.minute
     df['second'] = df['date'].dt.second                
-    df.drop(['date','epoch','second'], axis = 1, inplace = True)
+    # df.drop(['date','epoch','second'], axis = 1, inplace = True)
     return df
 
 
