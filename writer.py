@@ -21,6 +21,7 @@ def insert_query(table_name, values):
     print("Execute insert query:")
     query = f'''
     INSERT INTO {table_name} VALUES {values}
+    on conflict do nothing
     '''
     cursor.execute(query)
     cursor.close()
