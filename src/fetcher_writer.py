@@ -2,8 +2,8 @@ import os
 import sys
 import dotenv
 from datetime import datetime
-from writer import insert_query
-from fetcher import fetch_ohlcv_data
+from .writer import insert_query
+from .fetcher import fetch_ohlcv_data
 
 
 
