@@ -57,3 +57,19 @@ StakeVision is a project focused on predicting staking trends. It uses advanced 
 | Performance Metrics   | Custom Framework   |
 
 ---
+
+## **Help**
+
+App can be run by:
+```
+uvicorn main:app --reload
+```
+
+Post request can be send to fetch and write by:
+```
+curl --location '127.0.0.1:8000/fetch_and_write/' \
+--header 'Content-Type: application/json' \
+--data '{
+    "since": "2023-08-01"
+}'
+```
