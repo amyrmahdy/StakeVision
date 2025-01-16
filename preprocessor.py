@@ -1,4 +1,3 @@
-#!./venv/bin/python3.12
 import pandas as pd
 from datetime import timedelta
 

@@ -1,4 +1,3 @@
-#!./venv/bin/python3.12
 import os
 import dotenv
 import pandas as pd
