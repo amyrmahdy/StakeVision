@@ -13,8 +13,6 @@ services:
       POSTGRES_PASSWORD: postgres
     ports:
       - 5433:5432
-    networks:
-      - stakevision
 volumes:
   postgresql-data-vol:
     driver: local
@@ -22,7 +20,3 @@ volumes:
       device: ./postgresql_data/
       o: bind
       type: none
-networks:
-  stakevision:
-    driver: bridge
-
