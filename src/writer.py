@@ -23,8 +23,11 @@ def insert_query(table_name, values):
     on conflict do nothing
     '''
     cursor.execute(query)
+    number_of_affected_rows = cursor.rowcount
     cursor.close()
     conn.close()
     print("Conncetion closed.")
+    return number_of_affected_rows
+
 
 

@@ -25,4 +25,5 @@ def fetch_write_by_date(since_user):
 
 
     target_table = 'tonusdt.hourly'
-    insert_query(table_name= target_table, values=ohlcv_data_all_in_one)
+    number_of_affected_rows = insert_query(table_name= target_table, values=ohlcv_data_all_in_one)
+    return number_of_affected_rows
