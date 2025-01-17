@@ -73,3 +73,13 @@ curl --location '127.0.0.1:8000/fetch_and_write/' \
     "since": "2023-08-01"
 }'
 ```
+
+Dockerfile build:
+```
+docker buildx build --tag stakevision:1.0.0 .
+```
+
+Run docker container:
+```
+docker run --name sv -p 8001:8000 -d stakevision:1.0.0
+```
