@@ -1,10 +1,6 @@
-#!./venv/bin/python3.12
 import os
 import dotenv
 import psycopg2
-import pandas as pd
-from datetime import timedelta
-import matplotlib.pyplot as plt
 
 # Load environment variables
 dotenv_file = dotenv.find_dotenv()
